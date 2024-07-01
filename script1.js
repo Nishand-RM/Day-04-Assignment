@@ -23,3 +23,15 @@ let prime = (num) => {
   return num;
 }
   console.log(prime(7));
+
+//sum of arrays
+let sum1 =0;
+let sum = (arr) => {
+  for(var i=0;i<arr.length;i++)
+  {
+    sum1+= arr[i];
+  }
+  return sum1;
+
+}
+  console.log(sum([3,4,5,6]));
