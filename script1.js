@@ -35,3 +35,28 @@ let sum = (arr) => {
 
 }
   console.log(sum([3,4,5,6]));
+
+//palindrome
+
+let pal = (arr) => {
+  const palindromes = [];
+    for (const element of arr) {
+      const reversedElement = element.split("").reverse().join("");
+      if (element === reversedElement) {
+        palindromes.push(element);
+      }
+    }
+    return palindromes;
+  }
+  console.log(pal(["mom","cat"]));
+  
+  //title caps
+  
+  let res =(str) => {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+    }
+    return str.join(' ');
+  }
+  console.log(res("hi hello everyone"));
